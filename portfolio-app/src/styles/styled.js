@@ -45,3 +45,10 @@ export const PageContainer = styled.div`
     color: ${colors.text};
     height: 100vh;
 `;
+
+export const SuperButton = styled.button`
+    color: ${colors.primary}
+    background: ${colors.secondary}
+    border: 2px solid white;
+    border-radius: .5rem;
+`
