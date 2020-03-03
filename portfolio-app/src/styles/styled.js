@@ -35,8 +35,10 @@ export const NavContainer = styled.nav`
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 0;
     padding-right: 0;
+    padding-bottom: .5rem;
 
     div {
         padding: .5rem;
@@ -47,17 +49,25 @@ export const NavContainer = styled.nav`
         padding-right: 0rem;
     }
 
-    h2 {
+
+    .headline h2 {
+        font-size: 1.8rem;
         display: flex;
         justify-content: flex-start;
-        padding-left: 0rem;
+        font-family: 'Oxanium', cursive;
+    }
+
+    .headline h4 {
+        padding-top: .2rem;
+        font-size: 1.1rem;
+        font-family: 'Oxanium', cursive;
     }
 
     .items {
+        font-family: 'Oxanium', cursive;
         display: flex;
         flex-direction: row;
     }
-    
 `
 
 export const Border = styled.div`
@@ -66,7 +76,8 @@ export const Border = styled.div`
     justify-content: center;
     align-items: center;
     width: 80%;
-    border-bottom: .15rem solid ${colors.primary};
+    border-bottom: .25rem solid ${colors.primary};
+    border-radius: .1rem;
 `
 
 export const AppContainer = styled.div`
