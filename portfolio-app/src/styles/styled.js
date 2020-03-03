@@ -28,12 +28,51 @@ export const TextElement = styled.p`
     color: ${colors.primary}
 `
 
+export const NavContainer = styled.nav`
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 0;
+
+    div {
+        padding: .5rem;
+        justify-content: space-around;
+    }
+
+    div:last-child {
+        padding-right: 0rem;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0rem;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: row;
+    }
+    
+`
+
+export const Border = styled.div`
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-bottom: .15rem solid ${colors.primary};
+`
+
 export const AppContainer = styled.div`
     
     width: 70%;
     margin: 0 auto;
-    padding-top: 2.5rem;
-
     @media ${devices.mobileS} {
         width: 100%;
     }
@@ -45,10 +84,3 @@ export const PageContainer = styled.div`
     color: ${colors.text};
     height: 100vh;
 `;
-
-export const SuperButton = styled.button`
-    color: ${colors.primary}
-    background: ${colors.secondary}
-    border: 2px solid white;
-    border-radius: .5rem;
-`
