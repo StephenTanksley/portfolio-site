@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env DB_ENV=test jest --watchAll --verbose --coverage --runInBand",
+    "server": "cross-env DB_ENV=dev nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Stephen Tanksley",
@@ -21,6 +22,7 @@
     "typescript": "^3.8.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.1",
     "jest": "^25.1.0",
     "supertest": "^4.0.2"
   }
