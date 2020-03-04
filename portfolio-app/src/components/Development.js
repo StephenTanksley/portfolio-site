@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { ContainerDiv } from '../styles/styled'
 
 // useEffect(() => {
 
@@ -7,8 +8,8 @@ import React, { useState, useEffect } from 'react'
 export const Development = () => {
 
     return (
-        <div>
+        <ContainerDiv>
             Hi.
-        </div>
+        </ContainerDiv>
     )
 }

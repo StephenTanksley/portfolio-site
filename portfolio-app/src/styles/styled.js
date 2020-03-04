@@ -14,7 +14,6 @@ export const ContainerDiv = styled.div`
     margin: 0 auto;
     line-height: 2rem;
     font-size: 1.1rem;
-    font-family: Trebuchet MS, Arial
 
     /*media queries*/
 
@@ -54,17 +53,14 @@ export const NavContainer = styled.nav`
         font-size: 1.8rem;
         display: flex;
         justify-content: flex-start;
-        font-family: 'Oxanium', cursive;
     }
 
     .headline h4 {
         padding-top: .2rem;
         font-size: 1.1rem;
-        font-family: 'Oxanium', cursive;
     }
 
     .items {
-        font-family: 'Oxanium', cursive;
         display: flex;
         flex-direction: row;
     }
