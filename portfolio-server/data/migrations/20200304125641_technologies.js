@@ -6,8 +6,6 @@ exports.up = async function(knex) {
         .unique()
       table.string('description')
         .notNullable()
-      table.string('role')
-        .notNullable()
   })
 };
 

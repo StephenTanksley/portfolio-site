@@ -1,13 +1,19 @@
-
-exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
-      ]);
-    });
+exports.seed = async function(knex) {
+  await knex('technologies').insert([
+    {
+      id: 1,
+      name: "HTML",
+      description: "Hypertext Markup Language. The 'frame' of a website to be interpreted and built by the browser.",
+    },
+    {
+      id: 2,
+      name: "CSS",
+      description: "Cascading Style Sheets. If HTML is the skeleton, .",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      description: "JavaScript allows a website to be dynamic as opposed to merely static using HTML/CSS."
+    },
+  ])
 };

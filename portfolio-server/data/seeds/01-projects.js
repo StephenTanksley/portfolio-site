@@ -1,13 +1,11 @@
 
-exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
-      ]);
-    });
+exports.seed = async function(knex) {
+  await knex('projects').insert([
+    {
+      id: 1,
+      title: "Star Viewer",
+      description: "Star Viewer is a Single Page Application built using React as my UI builder and Axios to handle requests. It was built to learn how to consume data from an API.",
+      image_url: "http://starviewer.netlify.com"
+    }, 
+  ])
 };
