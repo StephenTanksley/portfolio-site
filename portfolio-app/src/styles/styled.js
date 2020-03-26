@@ -80,6 +80,7 @@ export const AppContainer = styled.div`
     
     width: 70%;
     margin: 0 auto;
+    
     @media ${devices.mobileS} {
         width: 100%;
     }

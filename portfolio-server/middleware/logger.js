@@ -4,10 +4,10 @@ module.exports = (type) => (req, res, next) => {
 
     if(type === 'long') {
         console.log(`
-        ${req.method}\n
-        ${req.url}\n
-        ${utcTime}\n
-        ${req.ip}`)
+        Request type: ${req.method}\n
+        Request route: ${req.url}\n
+        Request time: ${utcTime}\n
+        Client IP: ${req.ip}`)
         next()
     } else {
         console.log(req)
