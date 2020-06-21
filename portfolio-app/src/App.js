@@ -1,36 +1,27 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
-//component imports 
-import { Header } from './components/Header'
-import { Development } from './components/Development'
-import { 
-  AppContainer, 
-  Border,
-  PageContainer } from './styles/styled'
-
+//component imports
+import { Header } from "./components/Header";
+import { About } from "./components/About";
+import { AppContainer, Border, PageContainer } from "./styles/styled";
 
 const App = () => {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    
-  }, [])
+  useEffect(() => {}, []);
 
   return (
-    <PageContainer >
+    <PageContainer>
       <AppContainer className="App">
         <Header />
         <Border />
-        <Development />
-        
-
+        <About />
       </AppContainer>
     </PageContainer>
-
   );
-}
+};
 
 export default App;
